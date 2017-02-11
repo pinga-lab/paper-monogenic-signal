@@ -1,7 +1,7 @@
 # paper-monogenic-signal
 
 ## About
-Source code, data and manuscript for the article "The monogenic signal of potential-field data: A Python Implementation". Published in the GEOPHYSICS 
+Source code, data and manuscript for the article "The monogenic signal of potential-field data: A Python Implementation". Published in the GEOPHYSICS VOL. 82, NO. 3 (MAY-JUNE 2017), DOI: 10.1190/GEO2016-0099.1
 by [Marlon C. Hidalgo-Gato](http://lattes.cnpq.br/4057248251995225)
 and [Valéria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471)
 
