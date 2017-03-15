@@ -1,16 +1,22 @@
-# paper-monogenic-signal
+# The monogenic signal of potential-field data: A Python Implementation
 
 ## About
-Source code, data and manuscript for the article "The monogenic signal of potential-field data: A Python Implementation". Published in the GEOPHYSICS VOL. 82, NO. 3 (MAY-JUNE 2017), DOI: 10.1190/GEO2016-0099.1
-by [Marlon C. Hidalgo-Gato](http://lattes.cnpq.br/4057248251995225)
-and [Valéria C. F. Barbosa](http://lattes.cnpq.br/0391036221142471)
+
+Source code, data and manuscript for the article "The monogenic signal of
+potential-field data: A Python Implementation". Published in the GEOPHYSICS
+VOL. 82, NO. 3 (MAY-JUNE 2017),
+DOI:[10.1190/GEO2016-0099.1](https://doi.org/10.1190/GEO2016-0099.1)
+by [Marlon C. Hidalgo-Gato](http://lattes.cnpq.br/4057248251995225) and
+[Valéria C. F.  Barbosa](http://lattes.cnpq.br/0391036221142471)
 
 This repository contains the manuscript, supplementary source code and data for a
 paper about the open-source program *Monogenic*.
 
 The *Monogenic* program is written in the Python 2.7/3.5 programming language.
-**This program calculates the non-scale and the Poisson scale-space monogenic signal attributes based on the definitions introduced by [Hidalgo-Gato and Barbosa (2015)] (http://library.seg.org/doi/10.1190/geo2015-0025.1)**. 
-In addition, we make available the Python script “synthetic.py” and the data “data.dat” to run our synthetic test example. 
+**This program calculates the non-scale and the Poisson scale-space monogenic
+signal attributes based on the definitions introduced by
+[Hidalgo-Gato and Barbosa(2015)](http://library.seg.org/doi/10.1190/geo2015-0025.1)**.
+In addition, we make available the Python script “synthetic.py” and the data “data.dat” to run our synthetic test example.
 
 You will find the source-code for *Monogenic* and the contents of this
 repository at [software.seg.org](http://software.seg.org).
@@ -19,24 +25,42 @@ A "live" version of this repository is available at
 
 ## Abstract
 
-We have presented the program *Monogenic*, a Python 2.7/3.5 package of two functions to calculate the non-scale and the Poisson scale-space monogenic signals of a 2D data. Both monogenic signal functions return the local amplitude, the local phase and the local orientation of a potential-field data or any kind of 2D array. Compared with the Poisson scale-space monogenic signal, the non-scale monogenic signal is easier to use because the former requires band-pass filtering the data whereas non-scale monogenic signal requires only the original data set. However, the Poisson scale-space monogenic signal yields a sharper image of boundaries of the geologic bodies than the non-scale monogenic signal. We demonstrated the use of the monogenic signal by applying it to a synthetic magnetic data. The Python script “synthetic.py” contains the algorithm to run our synthetic example. This example was run using specific Poisson scale-space parameters. However, the users can try different Poisson scale-space parameters for the same synthetic model. Finally, we stress that the application of the non-scale and the Poisson scale-space monogenic signals to enhance other geophysical data (e.g., seismic, GPR, gravity, multiple-component gravity gradiometry, magnetic gradient data) has no methodological obstacles.
+We have presented the program *Monogenic*, a Python 2.7/3.5 package of two
+functions to calculate the non-scale and the Poisson scale-space monogenic
+signals of a 2D data. Both monogenic signal functions return the local
+amplitude, the local phase and the local orientation of a potential-field data
+or any kind of 2D array. Compared with the Poisson scale-space monogenic
+signal, the non-scale monogenic signal is easier to use because the former
+requires band-pass filtering the data whereas non-scale monogenic signal
+requires only the original data set. However, the Poisson scale-space monogenic
+signal yields a sharper image of boundaries of the geologic bodies than the
+non-scale monogenic signal. We demonstrated the use of the monogenic signal by
+applying it to a synthetic magnetic data. The Python script “synthetic.py”
+contains the algorithm to run our synthetic example. This example was run using
+specific Poisson scale-space parameters. However, the users can try different
+Poisson scale-space parameters for the same synthetic model. Finally, we stress
+that the application of the non-scale and the Poisson scale-space monogenic
+signals to enhance other geophysical data (e.g., seismic, GPR, gravity,
+multiple-component gravity gradiometry, magnetic gradient data) has no
+methodological obstacles.
 
 ## Cite us
 
-The *Monogenic* program is a research software made by scientists. Your citations help us justify the effort that goes into developing open-source codes. 
+The *Monogenic* program is a research software made by scientists. Your citations help us justify the effort that goes into developing open-source codes.
 
-If you use the *Monogenic* program in your research, please cite it in your publications as: 
+If you use the *Monogenic* program in your research, please cite it in your publications as:
 
-    Hidalgo-Gato, M.C. and V. C. F. Barbosa (2017), The monogenic signal of potential-field data: A Python Implementation, Geophysics,  XX(X), XX–XX, DOI: XXXXXXXXXX.
+    Hidalgo-Gato, M.C. and V. C. F. Barbosa (2017), The monogenic signal of potential-field data: A Python Implementation, Geophysics,  82(3), F9-F14, DOI: 10.1190/GEO2016-0099.1.
 
-Please,  also cite the main method [Hidalgo-Gato and Barbosa (2015)] (http://library.seg.org/doi/10.1190/geo2015-0025.1): 
+Please,  also cite the main method
+[Hidalgo-Gato and Barbosa (2015)](http://library.seg.org/doi/10.1190/geo2015-0025.1):
 
      Hidalgo-Gato, M.C. and V. C. F. Barbosa (2015), Edge detection of potential-field sources using scale-space
         monogenic signal: Fundamental principles, Geophysics, 80(5), J27–J36, DOI: 10.1190/GEO2015-0025.1
 
 ## Content
 
-**Phyton codes:**
+**Python codes:**
 
 - monogenic.py:
 	General Python module containing the two functions to calculate the local
@@ -53,26 +77,28 @@ Please,  also cite the main method [Hidalgo-Gato and Barbosa (2015)] (http://lib
 **Data files:**
 
 - data.dat:
-	Synthetic magnetic data generated using the Python packaged "Fatiando a Terra":
-	http://fatiando.org/. This data is an example used in the current publication.
+	Synthetic magnetic data generated using the Python packaged
+    [Fatiando a Terra](http://fatiando.org/). This data is an example used in
+    the current publication.
 
 
 ## Getting the files
 
-To actually run the code, you will need to have the files on your machine. 
-You can download the files "monogenic.py", "synthetic.py" and "data.dat" on your machine. 
-Also, you can download a zip archive of this repository to get everything. 
-Alternatively, you can download a zip archive of this repository at: [software.seg.org](http://software.seg.org).
+To actually run the code, you will need to have the files on your machine.
+You can download the files "monogenic.py", "synthetic.py" and "data.dat" on your machine.
+Also, you can download a zip archive of this repository to get everything.
+Alternatively, you can download a zip archive of this repository at:
+[software.seg.org](http://software.seg.org).
 
 ## Installing the software
 
 **Prerequisites:**
 
-The Python program *Monogenic* v1.0 - "monogenic.py" requires the Python library "numpy" 
-and the script "synthetic.py" requires the Python packages "numpy" and "matplotlib". 
+The Python program *Monogenic* v1.0 - "monogenic.py" requires the Python library "numpy"
+and the script "synthetic.py" requires the Python packages "numpy" and "matplotlib".
 
 The easiest way to get Python and all libraries installed is through the [Anaconda Python
-distribution](http://continuum.io/downloads). After installed Anaconda, install the libraries 
+distribution](http://continuum.io/downloads). After installed Anaconda, install the libraries
 by running the following command in your terminal:
 
 	conda install numpy matplotlib
@@ -103,9 +129,11 @@ docstrings.
 The file "synthetic.py" is a Python-based command line script. By using this script, the
 figures presented in the publication can be reproduced.
 
-##License
+## License
 
-All source code is made available under a BSD 3-clause license. You can freely use and modify the code, without warranty, so long as you provide attribution to the authors. See LICENSE.txt for the full license text.
+All source code is made available under a BSD 3-clause license. You can freely
+use and modify the code, without warranty, so long as you provide attribution
+to the authors. See LICENSE.txt for the full license text.
 
 Redistribution and use in source and binary forms, with or without modification, are
 permitted provided that the following conditions are met:
@@ -118,16 +146,16 @@ permitted provided that the following conditions are met:
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
 OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
-COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE 
-GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
-AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 ## Disclaimer
 
-If you obtained this set of codes from the SEG (download from [software.seg.org](http://software.seg.org)) you must also agree to the following disclaimer: [software.seg.org](http://software.seg.org/disclaimer2.txt) 
+If you obtained this set of codes from the SEG (download from [software.seg.org](http://software.seg.org)) you must also agree to the following disclaimer: [software.seg.org](http://software.seg.org/disclaimer2.txt)
 
